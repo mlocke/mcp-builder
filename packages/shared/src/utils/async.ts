@@ -44,7 +44,6 @@ export function sleep(ms: number): Promise<void> {
 
 export class AsyncQueue<T> {
   private queue: Array<() => Promise<T>> = [];
-  private running = false;
   private maxConcurrency: number;
   private currentRunning = 0;
 

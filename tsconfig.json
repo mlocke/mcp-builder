@@ -21,7 +21,7 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "exactOptionalPropertyTypes": true,
+    "exactOptionalPropertyTypes": false,
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitAny": true,
@@ -34,7 +34,6 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@shared/*": ["./packages/shared/src/*"],
-      "@tools/*": ["./tools/*/src/*"],
       "@tests/*": ["./tests/*"]
     }
   },

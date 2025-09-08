@@ -42,12 +42,13 @@ export class MCPTestClient {
   }
 
   createRequest(method: string, params?: Record<string, unknown>): MCPRequest {
-    return {
+    const request: MCPRequest = {
       jsonrpc: '2.0',
       id: this.generateId(),
       method,
-      params
+      params: params ?? {}
     };
+    return request;
   }
 
   createToolCallRequest(toolName: string, args?: Record<string, unknown>): MCPRequest {
